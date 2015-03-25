@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: block;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+.game-board {
+  display: block;
+  width: 500px;
+  padding: 20px 100px;
+  margin: 0 auto;
+}
+
+.row {
+  float: left;
+  width: 300px;
+}
+
+.cell {
+  float: left;
+  width: 100px;
+  background-color: gray;
+  border: 1px solid red;
+  height: 100px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.mark {
+  margin: 0;
+  margin-top: calc((100% - 1em) / 2);
+  margin-bottom: calc((100% - 1em) / 2);
+}
+
+.cell:hover {
+  background-color: yellow;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.revealed {
+  background-color: white;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.end-message {
+  text-align: center;
+  margin: 0;
+}

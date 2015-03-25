@@ -10,9 +10,16 @@
     <!-- Whackjobs at GithubPages don't understand symlinks... -->
     <script src="../../ttt-core-solution/ttt-core.js"></script>
     <script src="../js/ttt-view.js"></script>
-
+    <div class="container">
+      <div id="game-board" class="game-board clearfix"></div>
+    </div>
+    
     <script>
-      // Write your code here.
+      $(function () {
+        var $gameBoard = $('#game-board');
+        var game = new TTT.Game();
+        var view = new TTT.View(game, $gameBoard);
+      })
     </script>
   </body>
 </html>
