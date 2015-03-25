@@ -13,9 +13,7 @@
   View.prototype.bindEvents = function () {
     var that = this;
     $('.cell').on('click', function(event) {
-      var currentTarget = event.currentTarget;
-      var $currentTarget = $(currentTarget);
-      that.makeMove($currentTarget);
+      that.makeMove($(event.currentTarget));
     });
   };
 
